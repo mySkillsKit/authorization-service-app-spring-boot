@@ -1,0 +1,19 @@
+GET localhost:9000/authorize?user=Ivanov&password=Qwer2022
+
+###
+
+GET localhost:9000/authorize?user=&password=Qwer2020
+
+###
+
+GET localhost:9000/authorize?user=Vasilev&password=
+
+###
+GET localhost:9000/authorize?user=Vasilev&password=Qwer20
+
+###
+
+GET localhost:9000/authorize?user=Vasilev&password=Qwer2022
+
+###
+
