@@ -22,7 +22,7 @@ public class UserRepository {
                 Arrays.asList(Authorities.DELETE, Authorities.READ));
 
         for (var entry : listMap.entrySet()) {
-            System.out.println(entry.getKey() + "/" + entry.getValue());
+            //System.out.println(entry.getKey() + "/" + entry.getValue());
             if (entry.getKey().getName().equals(user)
                     && entry.getKey().getPassword().equals(password)) {
                 return entry.getValue();

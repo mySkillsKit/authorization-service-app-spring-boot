@@ -19,4 +19,5 @@ public class AuthorizationController {
         System.out.format("[User: %s, password: %s] ", user, password);
         return service.getAuthorities(user, password);
     }
+
 }
