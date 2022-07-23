@@ -12,8 +12,8 @@ import java.util.concurrent.ConcurrentHashMap;
 
 @Repository
 public class UserRepository {
-    private Map<User, List<Authorities>> listMap = new ConcurrentHashMap<>();
-    List<Authorities> permissions = new ArrayList<>();
+    private final Map<User, List<Authorities>> listMap = new ConcurrentHashMap<>();
+    private final List<Authorities> permissions = new ArrayList<>();
 
     public List<Authorities> getUserAuthorities(String user, String password) {
 
