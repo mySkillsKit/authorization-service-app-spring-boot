@@ -149,6 +149,7 @@ public class AuthorizationController {
 5. Два полученных файла добавьте в репозиторий вашего приложения и пришлите ссылка на него.
 
 ## Решение
+## Вариант 1 Dockerfile
 Запускаем терминал
 1. Cобрать jar архив с нашим spring boot приложением:
 `./mvnw clean package`
@@ -159,3 +160,7 @@ public class AuthorizationController {
 4. Проверяем в браузере:
 `http://localhost:9000/authorize?user=Vasilev&password=Qwer2022`
 
+
+## Вариант 2 docker-compose.yml
+Запускаем терминал и выполнить команду:
+`docker-compose up`  
