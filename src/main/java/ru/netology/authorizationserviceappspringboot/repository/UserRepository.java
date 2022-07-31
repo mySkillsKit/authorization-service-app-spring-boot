@@ -21,7 +21,7 @@ public class UserRepository {
         listMap.put(new User("Vasilev", "Qwer2022"),
                 Arrays.asList(Authorities.DELETE, Authorities.READ));
 
-        for (var entry : listMap.entrySet()) {
+        for (Map.Entry<User, List<Authorities>> entry : listMap.entrySet()) {
             //System.out.println(entry.getKey() + "/" + entry.getValue());
             if (entry.getKey().getName().equals(user)
                     && entry.getKey().getPassword().equals(password)) {
