@@ -156,11 +156,13 @@ public class AuthorizationController {
 2. Создать образ из нашего Dockerfile, мы должны запустить:
 `docker build --tag=myapp:latest .`
 3. Запускаем контейнер из нашего образа:
-`docker run --rm -p9000:9000 -it myapp`
+`docker run --rm -p8080:8080 -it myapp`
 4. Проверяем в браузере:
-`http://localhost:9000/authorize?user=Vasilev&password=Qwer2022`
+`http://localhost:8080/authorize?user=Vasilev&password=Qwer2022`
 
 
 ## Вариант 2 docker-compose.yml
-Запускаем терминал и выполнить команду:
+1. Cобрать jar архив с нашим spring boot приложением:
+   `./mvnw clean package`
+2. Запускаем терминал и выполнить команду:
 `docker-compose up`  
